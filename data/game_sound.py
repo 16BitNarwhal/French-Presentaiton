@@ -1,5 +1,3 @@
-__author__ = 'justinarmstrong'
-
 import pygame as pg
 from . import setup
 from . import constants as c
@@ -14,8 +12,6 @@ class Sound(object):
         self.game_info = overhead_info.game_info
         self.set_music_mixer()
 
-
-
     def set_music_mixer(self):
         """Sets music for level"""
         if self.overhead_info.state == c.LEVEL:
@@ -26,7 +22,6 @@ class Sound(object):
             pg.mixer.music.load(self.music_dict['game_over'])
             pg.mixer.music.play()
             self.state = c.GAME_OVER
-
 
     def update(self, game_info, mario):
         """Updates sound object with game info"""
@@ -79,7 +74,6 @@ class Sound(object):
                 self.play_music('main_theme', c.NORMAL)
             elif self.mario.dead:
                 self.play_music('death', c.MARIO_DEAD)
-
 
         elif self.state == c.WORLD_CLEAR:
             pass
