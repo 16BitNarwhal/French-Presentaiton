@@ -13,6 +13,3 @@ def main():
 
     run_it.setup_states(state_dict, c.MAIN_MENU)
     run_it.main()
-
-
-

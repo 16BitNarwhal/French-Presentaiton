@@ -1,5 +1,3 @@
-__author__ = 'justinarmstrong'
-
 from .. import setup, tools
 from .. import constants as c
 from .. import game_sound
@@ -46,9 +44,6 @@ class LoadScreen(tools._State):
 
         else:
             self.done = True
-
-
-
 
 class GameOver(LoadScreen):
     """A loading screen with Game Over"""
@@ -105,12 +100,3 @@ class TimeOut(LoadScreen):
             self.overhead_info.draw(surface)
         else:
             self.done = True
-
-
-
-
-
-
-
-
-
